@@ -16,11 +16,11 @@ import java.util.List;
 public class GameOfLife extends Application {
 
     // All cells should have a square shape with the size specified by this field
-    private final int squareSize = 100;
+    private final int squareSize = 30;
 
     // The number of rows and columns the grid will consist of
-    private final int maxRows = 1;
-    private final int maxColumns = 10;
+    private final int maxRows = 20;
+    private final int maxColumns = 35;
 
     /**
      * main method
@@ -159,6 +159,7 @@ public class GameOfLife extends Application {
      */
     private void closeGame() {
         System.out.println("The input is invalid!");
+        System.out.println("Every cell must have a y and x position.");
         System.out.println("The y position for a cell should be between " + 0 +
                             " and " + (maxRows - 1) + ".");
         System.out.println("The x position for a cell should be between " + 0 +
